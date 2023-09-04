@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import { Helmet } from 'react-helmet'
-import {SVG} from "../helper"
+import {SVG, UDEMY_COURSE} from "../helper"
 import Header from '../components/header'
 import Label from '../components/label'
 import MemberDetails from '../components/member-details'
@@ -11,6 +11,7 @@ import ServiceCard from '../components/service-card'
 import SecondaryButton from '../components/secondary-button'
 import Footer from '../components/footer'
 import './home.css'
+ 
 
 const Home = (props) => {
   return (
@@ -40,7 +41,7 @@ const Home = (props) => {
       <div className="home-section1">
         <div className="home-container03">
           <div className="home-container04">
-            <h6 className="home-text02">Blockchain Workshops</h6>
+          <Label text="Blockchain Workshops"></Label>
             <h3 className="home-text03">
               Unlocking the Power of Decentralization
             </h3>
@@ -195,44 +196,26 @@ const Home = (props) => {
         </div>
         <div className="home-team">
           <div className="home-container17">
-            <Link to="/profile" className="home-navlink">
-              <div className="home-container18">
-                <CourseCard></CourseCard>
-                <MemberDetails
-                  heading1=" "
-                  heading11="Learn to Deploy Hyperledger Fabric v2.2 on Multihost"
-                  image_src="https://camo.githubusercontent.com/c1d69dca324523226bb1d59d3f87b9e1404f8f9a20d637206777d7f7c934efc3/68747470733a2f2f696d672d632e7564656d7963646e2e636f6d2f636f757273652f323430783133352f333734313534305f643331665f342e6a7067"
-                  rootClassName="member-details-root-class-name"
-                ></MemberDetails>
-              </div>
-            </Link>
-            <Link to="https://www.udemy.com/course/hyperledger-fabric-on-kubernetes-complete-guide/" className="home-navlink1">
-              <div className="home-container19">
-                <MemberDetails
-                  heading1=" "
-                  heading11="The Complete Guide on Hyperledger Fabric v2.x on Kubernetes"
-                  image_src="https://camo.githubusercontent.com/26de2bea2c69602977fd8755c89e2e98a99111ecf965bbd9d9d86ae039c36298/68747470733a2f2f696d672d632e7564656d7963646e2e636f6d2f636f757273652f323430783133352f333937303932305f366631365f342e6a7067"
-                ></MemberDetails>
-              </div>
-            </Link>
-            <Link to="/profile" className="home-navlink2">
-              <div className="home-container20">
-                <MemberDetails
-                  heading1=" "
-                  heading11="Master Class On Hyperledger Besu"
-                  image_src="https://camo.githubusercontent.com/19683ea2d04d1504149757b54d3ea177d4916231ed483e5e3b8d3a036b55afdd/68747470733a2f2f696d672d632e7564656d7963646e2e636f6d2f636f757273652f323430783133352f333831353533325f316564635f322e6a7067"
-                ></MemberDetails>
-              </div>
-            </Link>
-            <Link to="/profile" className="home-navlink3">
-              <div className="home-container21">
-                <MemberDetails
-                  heading1=" "
-                  heading11="Certified Blockchain Developer Certification - 2022"
-                  image_src="https://camo.githubusercontent.com/21e374bfb2588156ef8fa731bee12d79d8cb7cfc4d6d38a536a5405c40c8c2db/68747470733a2f2f696d672d632e7564656d7963646e2e636f6d2f636f757273652f323430783133352f333831343437365f653363372e6a7067"
-                ></MemberDetails>
-              </div>
-            </Link>
+            
+              
+           {
+            UDEMY_COURSE.map((course, index)=>{
+                return (
+<CourseCard key={index}
+rating={course.rating} 
+url={course.url} 
+enrollments={course.enrollments} 
+title={course.name} 
+img={course.img}></CourseCard>
+                )
+            })
+           }
+                
+            
+           
+           
+ 
+          
           </div>
         </div>
       </div>
