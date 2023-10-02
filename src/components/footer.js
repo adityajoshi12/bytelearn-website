@@ -3,7 +3,7 @@ import React from 'react'
 import './footer.css'
 import { openInNewTab, APP_URL } from '../helper'
 
-const Footer = (props) => {
+const Footer = () => {
   return (
     <div className="footer-container">
       <div className="footer-container01">

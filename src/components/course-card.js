@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react'
 import "./course-card.css"
 import { openInNewTab } from '../helper';
@@ -11,7 +12,7 @@ const CourseCard = (props) => {
           <span>
           {rating}/5 Rating
           </span>
-          <span>
+        <span>
           {enrollments}+ Enrolled
           </span>
         </div>
@@ -29,5 +30,4 @@ const CourseCard = (props) => {
       </div>
     );
 }
-
 export default CourseCard;

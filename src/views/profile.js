@@ -1,15 +1,13 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react'
 
 import { Helmet } from 'react-helmet'
 
 import Header from '../components/header'
-import Counter from '../components/counter'
-import PrimaryButton from '../components/primary-button'
-import SecondaryButton from '../components/secondary-button'
 import Footer from '../components/footer'
 import './profile.css'
 
-const Profile = (props) => {
+const Profile = () => {
     return (
         <div className="profile-container">
             <Helmet>

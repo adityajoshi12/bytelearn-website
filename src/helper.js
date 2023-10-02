@@ -18,6 +18,13 @@ const SVG={
 }
 const UDEMY_COURSE=[
     {
+        name:"Building Enterprise Ready Blockchain Network",
+        url:"https://courses.bytelearn.in/courses/Building-Enterprises-Ready-Hyperledger-Fabric-Networks-651a3f0ce4b05be61a8c93b5-651a3f0ce4b05be61a8c93b5",
+        img:`${process.env.PUBLIC_URL}/enterprise-ready-blockchain.jpg`,
+        rating:"4.5",
+        enrollments:"10",
+    },
+    {
         name:"Learn to Deploy Hyperledger Fabric v2.2 on Multihost",
         url:"https://www.udemy.com/course/learn-to-deploy-hyperledger-fabric-v22-on-multihost",
         img:"https://camo.githubusercontent.com/c1d69dca324523226bb1d59d3f87b9e1404f8f9a20d637206777d7f7c934efc3/68747470733a2f2f696d672d632e7564656d7963646e2e636f6d2f636f757273652f323430783133352f333734313534305f643331665f342e6a7067",

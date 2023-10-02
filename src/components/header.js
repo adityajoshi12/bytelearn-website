@@ -10,11 +10,11 @@ const Header = (props) => {
     <div data-role="Header" className={`header-header ${props.rootClassName} `}>
       <div className="header-container">
         <Link to="/" className="header-navlink">
-          <h1 className="header-heading TextSM">{props.heading1}</h1>
+          <h1 className="header-heading ">{props.heading1}</h1>
         </Link>
-        {/* <Link to="/profile" className="header-navlink1">
+        <Link to="/profile" className="header-navlink1">
           <div className="header-container1"></div>
-        </Link>  */}
+        </Link> 
         {/* <Link to="/blog-post" className="header-navlink2">
         <h1 className="header-heading TextSM">Blog</h1>
         </Link> */}
@@ -56,7 +56,7 @@ const Header = (props) => {
           </div>
         </div>
         <div className="header-mid">
-          <Link to="/profile" className="header-navlink4">
+          {/* <Link to="/profile" className="header-navlink4">
             <div className="header-container4">
               <svg viewBox="0 0 1024 1024" className="header-icon08">
                 <path
@@ -64,7 +64,7 @@ const Header = (props) => {
                   className=""
                 ></path>
               </svg>
-              <span className="header-text TextSM">PROFILE</span>
+              <span className="header-text TextSM">Courses</span>
             </div>
           </Link>
           <Link to="/blog-post" className="header-navlink5">
@@ -89,15 +89,9 @@ const Header = (props) => {
               </svg>
               <span className="header-text1 TextSM">BLOG</span>
             </div>
-          </Link>
+          </Link> */}
         </div>
         <div className="header-bot">
-          <svg viewBox="0 0 877.7142857142857 1024" className="header-icon15">
-            <path
-              d="M713.143 73.143c90.857 0 164.571 73.714 164.571 164.571v548.571c0 90.857-73.714 164.571-164.571 164.571h-107.429v-340h113.714l17.143-132.571h-130.857v-84.571c0-38.286 10.286-64 65.714-64l69.714-0.571v-118.286c-12-1.714-53.714-5.143-101.714-5.143-101.143 0-170.857 61.714-170.857 174.857v97.714h-114.286v132.571h114.286v340h-304c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571z"
-              className=""
-            ></path>
-          </svg>
           <svg viewBox="0 0 1024 1024" className="header-icon17">
             <path
               d="M1024 226.4c-37.6 16.8-78.2 28-120.6 33 43.4-26 76.6-67.2 92.4-116.2-40.6 24-85.6 41.6-133.4 51-38.4-40.8-93-66.2-153.4-66.2-116 0-210 94-210 210 0 16.4 1.8 32.4 5.4 47.8-174.6-8.8-329.4-92.4-433-219.6-18 31-28.4 67.2-28.4 105.6 0 72.8 37 137.2 93.4 174.8-34.4-1-66.8-10.6-95.2-26.2 0 0.8 0 1.8 0 2.6 0 101.8 72.4 186.8 168.6 206-17.6 4.8-36.2 7.4-55.4 7.4-13.6 0-26.6-1.4-39.6-3.8 26.8 83.4 104.4 144.2 196.2 146-72 56.4-162.4 90-261 90-17 0-33.6-1-50.2-3 93.2 59.8 203.6 94.4 322.2 94.4 386.4 0 597.8-320.2 597.8-597.8 0-9.2-0.2-18.2-0.6-27.2 41-29.4 76.6-66.4 104.8-108.6z"

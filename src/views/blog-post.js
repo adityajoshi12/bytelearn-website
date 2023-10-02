@@ -10,7 +10,7 @@ import ArticleCard from '../components/article-card'
 import Footer from '../components/footer'
 import './blog-post.css'
 
-const BlogPost = (props) => {
+const BlogPost = () => {
   return (
     <div className="blog-post-container">
       <Helmet>
@@ -238,7 +238,7 @@ const BlogPost = (props) => {
             ></PostReaction>
             <PostReaction
               name="Jessica Stones"
-              text="I always felt like I could do anything. That’s the main thing people are controlled by! Thoughts- their perception of themselves! They're slowed down."
+              text="I always felt like I could do anything. That's the main thing people are controlled by! Thoughts- their perception of themselves! They're slowed down."
               shares="1"
               image_src="/team6-200h.jpg"
             ></PostReaction>
@@ -262,7 +262,7 @@ const BlogPost = (props) => {
         <div className="blog-post-container12">
           <Label text="STORIES"></Label>
           <h3 className="blog-post-text46 Healine">
-            <span className="blog-post-text47">Before I go </span>
+            <span className="blog-post-text47">Before I go</span>
           </h3>
           <span className="blog-post-text48 TextXL">
             We&apos;ve got time, but we are only doing what they say and want. I
