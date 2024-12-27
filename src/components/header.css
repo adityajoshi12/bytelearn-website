@@ -252,3 +252,16 @@
     margin-bottom: 0px;
   }
 }
+
+.course-icon {
+    fill-rule:evenodd;
+    clip-rule:evenodd;
+}
+
+.header-icon-twitter {
+    width: 24px; /* Example width */
+    height: 24px; /* Example height */
+    fill: white; /* Example fill color. Match other header icons. */
+    cursor: pointer; /* Make it clear it's clickable */
+    margin: 4px; /* Add padding for spacing */
+}
