@@ -50,7 +50,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-container10"></div>
-      <span className="footer-text7 TextSM">Copyright © 2023 ByteLearn</span>
+      <span className="footer-text7 TextSM">`Copyright © ${new Date().getFullYear()} ByteLearn`</span>
     </div>
   )
 }
