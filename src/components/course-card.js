@@ -13,7 +13,7 @@ const CourseCard = (props) => {
           {rating}/5 Rating
           </span>
         <span>
-          {enrollments}+ Enrolled
+          {enrollments} Enrolled
           </span>
         </div>
         <div className="card-content">
